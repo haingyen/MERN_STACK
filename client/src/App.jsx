@@ -1,9 +1,11 @@
+import "./index.css"
+import Register from "./components/register/register"
 
 function App() {
   return (
-    <>
-    hello!
-    </>
+    <div>
+      <Register/>
+    </div>
   )
 }
 
