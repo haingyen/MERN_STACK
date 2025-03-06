@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const blogSchema = new mongoose.Schema({
+const serverSchema = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
@@ -25,6 +25,6 @@ const blogSchema = new mongoose.Schema({
     }
 }, {timestamps: true});
 
-const Blog = mongoose.model('Blog', blogSchema);
+const Server = mongoose.model('Server', serverSchema);
 
-export default Blog;
+export default Server;

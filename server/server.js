@@ -3,7 +3,7 @@ import express from 'express';
 import { PORT } from './config/env.js';
 import authRouter from './routes/auth.routes.js';
 import userRouter from './routes/user.routes.js';
-import blogRouter from './routes/blog.routes.js';
+import serverRouter from './routes/server.routes.js';
 import connectToDatabase from './database/mongodb.js';
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
-app.use('/api/v1/blog', blogRouter);
+app.use('/api/v1/blog', serverRouter);
 
 app.get('/', (req, res) => {
     res.send('Welcome to Hai Nguyen!');
