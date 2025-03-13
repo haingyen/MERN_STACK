@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className='container'>
         <div className="header">
-            <div className="text">Sign Up</div>
+            <div className="text">Sign Up TEST</div>
             <br/>
         </div>
         <div className="inputs">
