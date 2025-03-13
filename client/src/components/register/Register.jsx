@@ -19,7 +19,7 @@ const Register = () => {
                 <input type="password" placeholder='Password'/>
             </div>
         </div>
-        <div className="forgot-password">Forgot Password! <span>Click Here!</span></div>
+        <div className="forgot-password">Forgot Password! TEST <span>Click Here!</span></div>
         <div className="submit-container">
             <div className="submit">Register</div>
             <div className="submit">Login</div>
