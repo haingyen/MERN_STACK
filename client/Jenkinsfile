@@ -1,9 +1,9 @@
 pipeline {
-    agent "ec2-agent-01" 
+    agent ec2-agent-01 
     stages {
         stage('info') { 
             steps {
-                sh(script: """ whoami;pwd;la -al """, lable: "first stage")
+                sh(script: """ whoami;pwd;la -al """, label: "first stage")
             }
         }
     }
