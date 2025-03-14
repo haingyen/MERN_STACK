@@ -1,5 +1,7 @@
 pipeline {
-    agent ec2-agent-01 
+    agent {
+        label 'ec2-agent-01'
+    } 
     stages {
         stage('info') { 
             steps {
