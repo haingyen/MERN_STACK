@@ -1,0 +1,11 @@
+pipeline {
+    agent 'ec2-agent-01'
+
+    stages {
+        stage('info') {
+            steps {
+                sh(script: ''' whoami;pwd;ls -alt ''', label: 'first stage 03')
+            }
+        }
+    }
+}
