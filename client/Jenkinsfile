@@ -1,20 +1,10 @@
 pipeline {
-    agent any
+    agent 'ec2-agent-01'
 
     stages {
-        stage('build') {
+        stage('info') {
             steps {
-                echo 'building...'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'testing...'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploy...'
+                sh(script: ''' whoami;pwd;ls -alt ''', label: 'first stage')
             }
         }
     }
