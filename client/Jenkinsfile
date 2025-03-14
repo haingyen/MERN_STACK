@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('info') { 
             steps {
-                sh(script: """ whoami;pwd;la -alt """, lable: "first stage")
+                sh(script: """ whoami;pwd;la -al """, lable: "first stage")
             }
         }
     }
