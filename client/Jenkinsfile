@@ -1,7 +1,8 @@
 pipeline {
     agent {
         label 'ec2-agent'
-    } 
+    }
+
     stages {
         stage('info') { 
             steps {
